@@ -1,0 +1,26 @@
+#:kivy 1.0
+#:import kivy kivy
+
+<Touchtracer>:
+    canvas:
+        Color:
+            rgb: 1, 1, 1
+        Rectangle:
+            source: 'data/images/background.jpg'
+            size: self.size
+
+    BoxLayout:
+        padding: 10
+        spacing: 10
+        size_hint: 1, None
+        pos_hint: {'top': 1}
+        height: 24
+        Image:
+            size_hint: None, None
+            size: 24, 24
+            source: 'data/logo/kivy-icon-32.png'
+
+        Image:
+            size_hint: None, None
+            size: 24, 24
+            source: 'testpattern.png'
