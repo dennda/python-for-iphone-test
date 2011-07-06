@@ -7,31 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* iOS_python_testAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iOS_python_testAppDelegate.m */; };
+		010731C2137F20B800A8D3A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010731C1137F20B800A8D3A0 /* AudioToolbox.framework */; };
+		010731C4137F20C300A8D3A0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 010731C3137F20C300A8D3A0 /* QuartzCore.framework */; };
+		012891CD1383243100408726 /* shader in Resources */ = {isa = PBXBuildFile; fileRef = 012891C61383243100408726 /* shader */; };
+		01530D91137ADAA70076F6BF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01530D90137ADAA70076F6BF /* libz.dylib */; };
+		01532C4A137BE99C0076F6BF /* YourApp in Resources */ = {isa = PBXBuildFile; fileRef = 01532C41137BE99B0076F6BF /* YourApp */; };
+		01532DAA137C099F0076F6BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01532DA9137C099F0076F6BF /* icon.png */; };
+		016506871382D08000F26AAF /* libSDL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016506861382D08000F26AAF /* libSDL.a */; };
+		0179083B137D37D000E037D1 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = 017903A4137D37CF00E037D1 /* lib */; };
+		0179083D137D380D00E037D1 /* libpython2.7-arm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0179083C137D380D00E037D1 /* libpython2.7-arm.a */; };
+		01790B81137E5ED900E037D1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01790B7A137E5ED900E037D1 /* OpenGLES.framework */; };
+		01DFBAEC1381583E0026D545 /* include in Resources */ = {isa = PBXBuildFile; fileRef = 01DFBA8C1381583E0026D545 /* include */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		E82FCE1812B1D0AC00265E4E /* RemoteInteractive.py in Resources */ = {isa = PBXBuildFile; fileRef = E82FCE1712B1D0AC00265E4E /* RemoteInteractive.py */; };
-		E864E2AA12AC213900F99552 /* lib in Resources */ = {isa = PBXBuildFile; fileRef = E864D16312AC213600F99552 /* lib */; };
-		E8EDD24B12B1DBC00014B24B /* libpython2.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EDD24A12B1DBC00014B24B /* libpython2.6.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		010731C1137F20B800A8D3A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		010731C3137F20C300A8D3A0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		012891C61383243100408726 /* shader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shader; sourceTree = "<group>"; };
+		01530D90137ADAA70076F6BF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		01532C41137BE99B0076F6BF /* YourApp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = YourApp; sourceTree = "<group>"; };
+		01532DA9137C099F0076F6BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		016506861382D08000F26AAF /* libSDL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL.a; path = "../sdl-1.3/Xcode-iPhoneOS/SDL/build/Debug-iphoneos/libSDL.a"; sourceTree = SOURCE_ROOT; };
+		017903A4137D37CF00E037D1 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = "../python-for-iphone/Python-2.7.1/_install/lib"; sourceTree = SOURCE_ROOT; };
+		0179083C137D380D00E037D1 /* libpython2.7-arm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libpython2.7-arm.a"; path = "/Users/dennda/dev/python-for-iphone/Python-2.7.1/_install/lib/libpython2.7-arm.a"; sourceTree = "<absolute>"; };
+		01790B7A137E5ED900E037D1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		01DFBA8C1381583E0026D545 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; path = include; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* iOS_python_testAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS_python_testAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* iOS_python_testAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOS_python_testAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* iOS-python-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-python-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iOS_python_test_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOS_python_test_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* iOS_python_test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iOS_python_test-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		E82FCE1712B1D0AC00265E4E /* RemoteInteractive.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = RemoteInteractive.py; sourceTree = "<group>"; };
-		E864D16312AC213600F99552 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
-		E8EDD24A12B1DBC00014B24B /* libpython2.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpython2.6.a; path = lib/libpython2.6.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +53,12 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				E8EDD24B12B1DBC00014B24B /* libpython2.6.a in Frameworks */,
+				01530D91137ADAA70076F6BF /* libz.dylib in Frameworks */,
+				0179083D137D380D00E037D1 /* libpython2.7-arm.a in Frameworks */,
+				01790B81137E5ED900E037D1 /* OpenGLES.framework in Frameworks */,
+				010731C2137F20B800A8D3A0 /* AudioToolbox.framework in Frameworks */,
+				010731C4137F20C300A8D3A0 /* QuartzCore.framework in Frameworks */,
+				016506871382D08000F26AAF /* libSDL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +68,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* iOS_python_testAppDelegate.h */,
-				1D3623250D0F684500981E51 /* iOS_python_testAppDelegate.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,9 +104,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E82FCE1712B1D0AC00265E4E /* RemoteInteractive.py */,
-				E864D16312AC213600F99552 /* lib */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				012891C61383243100408726 /* shader */,
+				01DFBA8C1381583E0026D545 /* include */,
+				017903A4137D37CF00E037D1 /* lib */,
+				01532DA9137C099F0076F6BF /* icon.png */,
+				01532C41137BE99B0076F6BF /* YourApp */,
 				8D1107310486CEB800E47090 /* iOS_python_test-Info.plist */,
 			);
 			name = Resources;
@@ -101,10 +117,15 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8EDD24A12B1DBC00014B24B /* libpython2.6.a */,
+				016506861382D08000F26AAF /* libSDL.a */,
+				01530D90137ADAA70076F6BF /* libz.dylib */,
+				010731C1137F20B800A8D3A0 /* AudioToolbox.framework */,
+				010731C3137F20C300A8D3A0 /* QuartzCore.framework */,
+				01790B7A137E5ED900E037D1 /* OpenGLES.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				0179083C137D380D00E037D1 /* libpython2.7-arm.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +155,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iOS-python-test" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -158,9 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				E864E2AA12AC213900F99552 /* lib in Resources */,
-				E82FCE1812B1D0AC00265E4E /* RemoteInteractive.py in Resources */,
+				01532C4A137BE99C0076F6BF /* YourApp in Resources */,
+				01532DAA137C099F0076F6BF /* icon.png in Resources */,
+				0179083B137D37D000E037D1 /* lib in Resources */,
+				01DFBAEC1381583E0026D545 /* include in Resources */,
+				012891CD1383243100408726 /* shader in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +198,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* iOS_python_testAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +208,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -195,6 +221,11 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.6.5\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.6.5/_install/lib\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.7.1/_install/lib\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.7.1/_install/lib/python2.7/config\"",
+					"\"$(SRCROOT)/../sdl-1.3/Xcode-iPhoneOS/SDL/build/Debug-iphoneos\"",
 				);
 				PRODUCT_NAME = "iOS-python-test";
 				SDKROOT = iphoneos;
@@ -205,6 +236,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iOS_python_test_Prefix.pch;
@@ -215,6 +247,11 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.6.5\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.6.5/_install/lib\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.7.1/_install/lib\"",
+					"\"$(SRCROOT)/../python-for-iphone/Python-2.7.1/_install/lib/python2.7/config\"",
+					"\"$(SRCROOT)/../sdl-1.3/Xcode-iPhoneOS/SDL/build/Debug-iphoneos\"",
 				);
 				PRODUCT_NAME = "iOS-python-test";
 				SDKROOT = iphoneos;
@@ -225,13 +262,25 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/dennda/dev/sdl-1.3/Xcode-iPhoneOS/SDL/build/Debug-iphoneos/usr/local/include/\"",
+					"/Users/dennda/dev/sdl-1.3/include",
+					"/Users/dennda/dev/python-for-iphone/Python-2.7.1/_install/include",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = all;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/Users/dennda/dev/sdl-1.3/Xcode-iPhoneOS/SDL/build/Debug-iphoneos/usr/local/include/";
 			};
 			name = Debug;
 		};

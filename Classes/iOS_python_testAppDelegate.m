@@ -6,6 +6,7 @@
 //  Copyright 2010 Andrew Cobb. All rights reserved.
 //
 
+#include "stdio.h"
 #import "iOS_python_testAppDelegate.h"
 #import "python2.6/Python.h"
 
@@ -20,11 +21,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     [self.window makeKeyAndVisible];
     
-    const char * prog = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"RemoteInteractive"
+    NSLog(@"Trying to bootstrap python");
+    //NSString *sprog = [[NSBundle mainBundle] pathForResource:@"YourApp/main" ofType:@"py"];
+    const char * prog = [
+                         [[NSBundle mainBundle] pathForResource:@"YourApp/main" ofType:@"py"] cStringUsingEncoding:
+                         NSUTF8StringEncoding];
+                        
+    /**
+    const char * prog = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"YourApp/main"
                                                                                             ofType:@"py"]
                                                    encoding:NSUTF8StringEncoding
                                                       error:nil] UTF8String];
-    PyRun_SimpleString(prog);    
+/**/ 
+    NSLog(@"Running main.py: %s", prog);
+    FILE* fd = fopen(prog, "r");
+    int ret = PyRun_SimpleFileEx(fd, prog, 1);
+    if (ret != 0)
+        NSLog(@"Application quit abnormally!");
     
     return YES;
 }
